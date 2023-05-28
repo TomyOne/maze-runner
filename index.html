@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maze Runner</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <div class="grid p-4 m-auto bg-blue-100 border-2">
+      <canvas
+        id="circle-canvas"
+        width="500"
+        height="500"
+        class="m-auto border-2"
+      ></canvas>
+      <div id="button-holder" class="flex w-full mt-2 justify-evenly">
+        <button id="undo" class="px-6 bg-green-200 border-2 rounded-lg">
+          Undo</button
+        ><button id="redo" class="px-6 bg-green-200 border-2 rounded-lg">
+          Redo
+        </button>
+      </div>
+    </div>
+    <py-config src="./custom.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+  </body>
+</html>

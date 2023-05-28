@@ -1,0 +1,5 @@
+plugins = [ 
+        "https://pyscript.net/latest/plugins/python/py_tutor.py" 
+        ]
+[[fetch]]
+files = ["./main.py", "./cell.py", "./maze.py", "./window.py", "./web_window.py"]
